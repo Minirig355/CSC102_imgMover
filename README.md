@@ -1,4 +1,4 @@
-# CSC102 - FINAL
+# CSC102 - Image Mover
 
 Assignment is on meme.html, a new javascript file was made to handle this, it's found at ./config/js/imgMover.js
 
