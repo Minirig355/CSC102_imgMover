@@ -1,0 +1,48 @@
+<!-- 1/17/2024 3:59a-->
+<!-- Christian Javier - CSC102 - HOME PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="..\css\navbar.css">
+        <title>Palindrome - Home</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just two, as well as the title <h1>-->
+            <img class="navtop" id="logo" src="..\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / PALINDROME</h1> <!-- ❗❗ CHANGE THIS EVERY ASSIGNMENT ❗❗ -->
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="main.html" class="active-page">Home</a></li>
+            <li><a href="meme.html">Meme</a></li>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="strings.html">Strings</a></li>
+        </ul>
+        <br>
+        <h2 style="text-align:center">Christian Javier - Network Security </h2><!--Most of the CSS for this section is just inline since it's small positioning adjustments I didn't feel it necessary to made a style sheet for it-->
+        <p style="margin-left:15px;text-align:center">Welcome to my page! I'll showcase some of my projects here, you can get to them using the Navbar.</p>
+        <br>
+        <h3 style="margin-left:15px;">About me:</h3>
+        <img src="../content/self.jpg" alt="A picture of me." height="400" style="float:right;margin-right:30px">
+        <p style="margin-left:15px;">I'm a network security major at the University of Advancing Technology, previously having held positions in the financial sector for cyber security as an intern and consultant as well as having worked in the field as an IT consultant and computer technician, I've always had a passion for anything computer related.</p>
+        <p style="margin-left:15px;">As a hobby I'm really interested in building computers and 3D printing, sometimes both at the same time by designing and building 3D printed computer cases or designing miniature versions of my builds to be printed and used as Raspberry Pi cases. Another one of my prints is below, a mousetrap car! Some of the mentioned projects and more can be seen below! I also like to play games such as Kerbal Space Program, sinking countless hours into stranding Jeb on various planets, I also enjoy online games like League of Legends. In addition I'm a big fan of music, I enjoy most genres and enjoy going to concerts when possible, I'm attending my first music festival in May. My favorite band however is the one I quoted below!</p>
+        <p style="font-style:italic">"Doubt is failure by design" -Dance Gavin Dance, Variation</p>
+        <br>
+        
+
+        <img src="../content/computer2.jpg" alt="My main computer that I built" width="256" style="float:left;margin-left:15px;margin-right:15px">
+        <img src="../content/computer1.jpg" alt="A mini ITX server I built out of spare parts" width="256">
+        <img src="../content/computer3.jpg" alt="Another mini ITX server I built, designing and 3D printing the case" width="256">
+        <img src="../content/computer4.jpg" alt="A miniature version of my computer, I use it as a Raspberry Pi case" width="256">
+        <img src="../content/mousetrap.png" alt="The mousetrap car I designed in Fusion 360 and 3D printed" height="256">
+        <img src="../content/doorStopper.png" alt="A doorstopper I designed to keep a door open for a cat" height="256">
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="..\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!-- 1/17/2024 3:59a-->
+<!-- Christian Javier - CSC102 - HOME PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="..\css\navbar.css">
+        <link rel="stylesheet" href="..\css\table.css">
+        <title>Palindrome - Home</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just two, as well as the title <h1>-->
+            <img class="navtop" id="logo" src="..\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / PALINDROME</h1> <!-- ❗❗ CHANGE THIS EVERY ASSIGNMENT ❗❗ -->
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="main.html">Home</a></li>
+            <li><a href="meme.html">Meme</a></li>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="schedule.html" class="active-page">Schedule</a></li>
+            <li><a href="strings.html">Strings</a></li>
+        </ul>
+        <br>
+        <h2 id="Sched">EDC '23 Schedule</h2><br>
+        <table class="schedule"  width="50%" border="2">
+            <col style="width: 13%">
+            <col style="width: 29%">
+            <col style="width: 29%">
+            <col style="width: 29%">
+            <thead>
+                <th>&nbsp;</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </thead>
+            <tbody style="text-align: center;">
+                <tr><td>7:00p</td><td>Above & Beyond</td><td>Dimension</td><td>Gareth Emery</td></tr>
+                <tr><td>8:00p</td><td>Lane 8</td><td>Zedd</td><td>NGHTMRE</td></tr>
+                <tr><td>9:00p</td><td>Koven</td><td>Excision</td><td>Porter Robinson</td></tr>
+                <tr><td>10:00p</td><td>Marshmello</td><td>Marauda</td><td>Madeon</td></tr>
+                <tr><td>11:00p</td><td>Stonebank</td><td>SLANDER</td><td>Sub Focus B2B Audien</td></tr>
+                <tr><td>12:00a</td><td>Craig Connelly</td><td>Skepsis</td><td>Tsu Nami</td></tr>
+                <tr><td>1:00a</td><td>Metrik</td><td>Crystal Skies</td><td>Last Heroes</td></tr>
+                <tr><td>2:00a</td><td>Illenium</td><td>Zeds Dead</td><td>Pixel Terror</td></tr>
+                <tr><td>3:00a</td><td>Oliverse</td><td>ODESZA</td><td>Mord Fustang</td></tr>
+                <tr><td>4:00a</td><td>Seven Lions</td><td>Kill The Noise</td><td>Deadmau5</td></tr>
+                <tr><td>5:00a</td><td>NERO</td><td>MiTiS</td><td>John Summit</td></tr>
+            </tbody>
+        </table>
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="..\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

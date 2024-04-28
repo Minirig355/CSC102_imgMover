@@ -1,0 +1,51 @@
+<!-- 1/17/2024 3:59a-->
+<!-- Christian Javier - CSC102 - HOME PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="config\css\main.css">
+        <link rel="stylesheet" href="config\css\navbar.css">
+        <link rel="stylesheet" href="config\css\login.css">
+        <script src="config\js\logincode.js"></script>
+        <title>Tables - Login</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just two, as well as the title <h1>-->
+            <img class="navtop" id="logo" src="config\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / LOGIN</h1>
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="index.html" class="active-page">Login</a></li>
+        </ul>
+        <br>
+        <form name="loginForm" action="config/pages/main.html" onsubmit="event.preventDefault(); validateLogin();" method="post" autocomplete="off"> <!--Using a form to validate user input with the default submit option disabled. I chose to send the data via POST and turn off autocomplete to help protect some data. This sets off a JS function to assist in validation -->
+            <div class="container">
+                <h1>UAT CSC Login</h1>
+                <p>Please enter your name and badge number to continue. (please check readme.md if you're confused)</p><!--README.md has the valid plaintext logins :) you can open the site directly in ./config/pages/main.html-->
+                <hr>
+
+                <input type="text" id="fullName" name="fullName" readonly> <!--A readonly input field to display the First/Last name formatted correctly-->
+                <hr>
+                
+                <label for="firstName"><b>First Name:</b></label>
+                <input type="text" id="firstName" name="firstName" onkeydown="keyClack('config/content/keyClack.wav')" onchange="updateName()" required><br><br> <!--I included the onchange tag to enable the readonly input form without having to submit. I also included the required tag as it's less code than implementing the same function in JS-->
+
+                <label for="lastName"><b>Last Name:</b></label>
+                <input type="text" id="lastName" name="lastName" onkeydown="keyClack('config/content/keyClack.wav')" onchange="updateName()" required><br><br>
+
+                <label for="badgeNum"><b>Badge Number:</b></label>
+                <input type="password" pattern="[0-9]*" inputmode="numeric" id="badgeNum" name="badgeNum" onkeydown="keyClack('config/content/keyClack.wav')" required><br><br> <!--For this one I used type pass as I assume it's a bit more sensitive. The pattern and inputmode tags are used so that only numbers are accepted as input, also cutting down on JS required for data validation-->
+
+                <button type="submit" class="submitbtn" onclick="keyClack('config/content/keyClack.wav')">submit</button>
+            </div>
+        
+        
+        
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="config\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

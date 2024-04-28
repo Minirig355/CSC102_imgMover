@@ -1,0 +1,59 @@
+ul { /*covers the entire ul that handles the navbar*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+  font-variant: normal;
+  height: 157px;
+}
+li { /*handles the links within the navbar, specifically the boxes they're contained in*/
+  float: left;
+  font-variant: normal;
+  padding-left: 10px;
+  clear: initial;
+}
+
+li a { /*Handles the text within the links*/
+  display: inline-block;
+  color: #ccc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-variant: normal;
+  font-size:28px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+ul li a.active-page { /*style to highlight the active page*/
+  background-color: #222223;
+}
+
+li a:hover { /*style to highlight on mouseover*/
+  background-color: orange;
+  color: white
+}
+
+ul img.navtop { /*originally had the class associated with a div, which is cleaner, but had alignment issues so I separated them*/
+  display: inline-block;  
+}
+
+ul h1.navtop { /*^*/
+  display: inline-block;
+}
+
+#logo { /*The smiling otter logo on the page, this justifies it left*/
+  float: left;
+  padding-left: 9px;
+  padding-top: 9px;
+}
+
+#title2 { /*Makes the text inherit the alignment of the logo and places it relative to it*/
+  padding-left: 10px;
+  padding-top: 17px;
+  font-size: 1em;
+  font-weight: 100;
+  clear: inherit;
+  float: left;
+}

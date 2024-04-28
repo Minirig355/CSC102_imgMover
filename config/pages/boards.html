@@ -1,0 +1,53 @@
+<!-- Christian Javier - CSC102 - BOARDS PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="..\css\navbar.css">
+        <link rel="stylesheet" href="..\css\fadein.css">
+        <title>Palindrome - Boards</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just two-->
+            <img class="navtop" id="logo" src="..\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / PALINDROME</h1> <!-- ❗❗ CHANGE THIS EVERY ASSIGNMENT ❗❗ -->
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="main.html">Home</a></li>
+            <li><a href="meme.html">Meme</a></li>
+            <li><a href="boards.html" class="active-page">Boards</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="strings.html">Strings</a></li>
+        </ul>
+        <br>
+        <h1 class="a">The Foundation</h1>
+        <h2 class="a">Netsec Objectives:</h2>
+        <div class="objectives">
+            <p class="a">1. Create a network infrastructure design communications document that includes identified hardware components,
+            connections to the outside world, identified physical layer connectivity (media) and addressing, including operational and
+            security components in the design.<br><br></p>
+            <p class="b">2. Install, configure and test security hardware and software tools with supporting documentation such as port scanners,
+            vulnerability detection systems, intrusion detection systems, firewalls, system hardening, anti-virus tools, patch
+            management, auditing and assessment.<br><br></p>
+            <p class="c">3. Construct, implement and document a script or a program to automate a security-related process or other tasks such as
+            installation, administration, management, mapping resources, logon scripts, patch management, updates, auditing,
+            analysis and assessment.<br><br></p>
+            <p class="d">4. Create a policy or procedure that addresses events such as: a disaster recovery plan, a business continuity plan, an
+            incident response policy, an acceptable usage document, an information security policy, a physical security policy,
+            assessments or troubleshooting procedures.<br><br></p>
+            <p class="e">5. Develop a research report or implementation plan concerning legal and ethical best practices and mandated requirements
+            that pertain to information security.<br><br></p>
+            <p class="f">6. Research, document, test and evaluate several current industry information security-based threats, risks, malicious
+            activities, covert methodology, encryption technologies, mitigation techniques or unconventional tactics to prevent loss of
+            sensitive information and data confidentiality, integrity and availability.</p>
+        </div>
+        <br>
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="..\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

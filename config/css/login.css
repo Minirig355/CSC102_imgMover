@@ -1,0 +1,31 @@
+form {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 34px;
+  }
+  h1 {
+      font-variant: small-caps;
+      font-size: 80px;
+  }
+  input[type=text], input[type=password] {
+    width: fit-content;
+    padding: 15px;
+    margin: 5px 0 0 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  hr {
+    width: 500px;
+    border: 1px solid #333;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 25px;
+  }

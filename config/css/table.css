@@ -1,0 +1,12 @@
+.schedule {
+    right: 20px;
+}
+#Sched {
+    text-indent: 450px
+}
+tr:nth-child(odd) {
+    background-color: #414141;
+}
+th {
+    background-color: #222223;
+}

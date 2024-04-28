@@ -1,0 +1,198 @@
+<!-- Christian Javier - CSC102 - BOARDS PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="..\css\navbar.css">
+        <link rel="stylesheet" href="..\css\game.css">
+        <link rel="stylesheet" href="..\css\flip.min.css" />
+        <script src="..\js\game.js"></script>
+        <script src="..\js\flip.min.js"></script>
+        <title>Palindrome - Game</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just 2-->
+            <img class="navtop" id="logo" src="..\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / PALINDROME</h1> <!-- ❗❗ CHANGE THIS EVERY ASSIGNMENT ❗❗ -->
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="main.html">Home</a></li>
+            <li><a href="meme.html">Meme</a></li>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html" class="active-page">Games</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="strings.html">Strings</a></li>
+        </ul>
+<!---+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- THE MAIN BODY -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->
+
+        <div class="variants">                                      <!--Lines 25-72 are the colorful dice on the left side, click them to change colors-->
+            <div class="colors">
+            <div id='diceDefault' class="dice color-one">
+                <div id="dice-one-side-six" class='def-side six'>   <!--Only side 6 is drawn because these are static dice-->
+                <div class="def-dot six-1"></div>
+                <div class="def-dot six-2"></div>
+                <div class="def-dot six-3"></div>
+                <div class="def-dot six-4"></div>
+                <div class="def-dot six-5"></div>
+                <div class="def-dot six-6"></div>
+                </div>
+                <p class="ctxt default">Default</p>
+            </div>
+            <div id='diceOutrun' class="dice color-two">
+                <div id="dice-one-side-six" class='out-side six'>
+                <div class="out-dot six-1"></div>
+                <div class="out-dot six-2"></div>
+                <div class="out-dot six-3"></div>
+                <div class="out-dot six-4"></div>
+                <div class="out-dot six-5"></div>
+                <div class="out-dot six-6"></div>
+                </div>
+                <p class="ctxt outrun">Outrun</p>
+            </div>
+            <div id='diceGold' class="dice color-three">
+                <div id="dice-one-side-six" class='gold-side six'>
+                <div class="gold-dot six-1"></div>
+                <div class="gold-dot six-2"></div>
+                <div class="gold-dot six-3"></div>
+                <div class="gold-dot six-4"></div>
+                <div class="gold-dot six-5"></div>
+                <div class="gold-dot six-6"></div>
+                </div>
+                <p class="ctxt gold">Gold</p>
+            </div>
+            <div id='diceRGB' class="dice color-four">
+                <div id="dice-one-side-six" class='rgb-side six'>
+                <div class="rgb-dot six-1"></div>
+                <div class="rgb-dot six-2"></div>
+                <div class="rgb-dot six-3"></div>
+                <div class="rgb-dot six-4"></div>
+                <div class="rgb-dot six-5"></div>
+                <div class="rgb-dot six-6"></div>
+                </div>
+                <p class="ctxt gamer">gAmEr</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="game">                                                          <!--Lines 74-148 handle the dice themselves, creating sides and dots-->
+            <div class="container">
+            <div id='dice1' class="dice dice-one">                                  <!--This div is responsible for dice 1, anything inside of it is a side or a dot of the first die-->
+                <div id="dice-one-side-one" class='side one'>
+                <div class="dot one-1"></div>
+                </div>
+                <div id="dice-one-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+                </div>
+                <div id="dice-one-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+                </div>
+                <div id="dice-one-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+                </div>
+                <div id="dice-one-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+                </div>
+                <div id="dice-one-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+                </div>
+            </div>
+        </div>
+            <div class="container">
+            <div id='dice2' class="dice dice-two">
+                <div id="dice-two-side-one" class='side one'>
+                <div class="dot one-1"></div>
+                </div>
+                <div id="dice-two-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+                </div>
+                <div id="dice-two-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+                </div>
+                <div id="dice-two-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+                </div>
+                <div id="dice-two-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+                </div>
+                <div id="dice-two-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+                </div>
+            </div> 
+        </div>
+        <div class='roll-button'><button id='roll'>Play Craps!</button></div><!--This is the button to play Craps-->
+        </div>
+        <div>                                                                <!--Lines 151-183 are handling the statistics and the counters associated with them-->
+            <p class="sum-text">Sum</p>
+            <div id="ticksum" class="tick" data-value="02" data-did-init="setupFlip">
+                <div data-repeat="true">
+                    <span data-view="flip"></span>
+                </div>
+            </div>
+        </div> 
+        <div class="wins">
+            <p class="wins-text">Wins:</p>
+            <div id="tickwin" class="tick" data-value="00" data-did-init="setupFlip">
+                <div data-repeat="true">
+                    <span data-view="flip"></span>
+                </div>
+            </div>
+        </div>
+        <div class="losses">
+            <p class="lose-text">Losses:</p>
+            <div id="ticklose" class="tick" data-value="00" data-did-init="setupFlip">
+                <div data-repeat="true">
+                    <span data-view="flip"></span>
+                </div>
+            </div>
+        </div>
+        <div class="ties">
+            <p class="ties-text">Ties:</p>
+            <div id="tickties" class="tick" data-value="00" data-did-init="setupFlip">
+                <div data-repeat="true">
+                    <span data-view="flip"></span>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+
+
+<!---+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- THE MAIN BODY -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-->          
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="..\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!-- 1/17/2024 3:59a-->
+<!-- Christian Javier - CSC102 - HOME PAGE-->
+<!DOCTYPE html>
+<html>
+    <head><!-- Defining the charset, css files and the title of the page-->
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="..\css\main.css">
+        <link rel="stylesheet" href="..\css\navbar.css">
+        <script src="..\js\imgMover.js"></script>
+        <title>Palindrome - Home</title> <!-- ❗❗ UPDATE THIS FOR ASSIGNMENT ❗❗ -->
+    </head>
+    <body><!-- Here the navbar, header 1 & 2 and some normal text is defined, a meme and a footer with my information-->
+        <ul><!-- The top navbar to navigate between pages, currently just two, as well as the title <h1>-->
+            <img class="navtop" id="logo" src="..\content\logo.png" alt="logo, a smiling otter" width="64" height="64">
+            <h1 class="navtop" id="title2">CSC 102 / PALINDROME</h1> <!-- ❗❗ CHANGE THIS EVERY ASSIGNMENT ❗❗ -->
+            <br><br><br><!-- Ran into issue where the nav buttons would be indented until after the img and h1, using clear fixed it for 'home' but broke 'boards', putting br's in fixed it but feels janky-->
+            <li><a href="main.html">Home</a></li>
+            <li><a href="meme.html" class="active-page">Meme</a></li>
+            <li><a href="boards.html">Boards</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="strings.html">Strings</a></li>
+        </ul>
+        <br>
+        <h2 id="meme-header" style="margin-left: 42%;">Meme</h2>
+        <div id="container" position="relative" style="margin-left: 41%;">
+            <img id="meme" src="..\content\sancic.jpg" alt="Funny SFW meme" position="absolute">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <button id="startButton" style="margin-left: 50%;" onclick="startMoving()">Start</button>
+        <button id="stopButton" onclick="stopMoving()" disabled>Stop</button>
+        <br>
+        <footer><!-- Added the overline detail to visually separate my own name from the school's information along with some non-breaking spaces to extend the overline, there's other cleaner methods to accomplish this but this is quick and dirty-->
+            <p style="display: inline-block;">Christian Javier - </p><a href="mailto:chrjavie@uat.edu?subject=Saw%20your%20site!">chrjavie@uat.edu</a><br><br><!-- I added a clickable mailto link so people can easily send me an email, just as easy as prepending the file-->
+            <p style="text-decoration: overline #ccc;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><!-- Blank overline-->
+            <p class="school">University of Advancing Technology<br>2625 W Baseline Rd<br>Tempe, AZ 85283</p>
+            <img class="logo3" src="..\content\logo3.png" alt="UAT logo" width="64" height="64"><!-- image is positioned using absolute and then percentages are used to place it correctly, I tried putting it in a div container and using text-align but it 'center aligns it' based on the left side of the image, not the center of it-->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+h1.a {pointer-events: none;opacity: 0;animation: fade 2s forwards 0s;}
+h2.a {pointer-events: none;opacity: 0;animation: fade 2s forwards 0s;}
+body div p.a {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards .2s;}
+body div p.b {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards .4s;}
+body div p.c {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards .6s;}
+body div p.d {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards .8s;}
+body div p.e {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards 1s;}
+body div p.f {background: linear-gradient(to right, #ccc, #8288ac);-webkit-background-clip: text;-webkit-text-fill-color: transparent;pointer-events: none;opacity: 0;animation: fade 2s forwards 1.2s;}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

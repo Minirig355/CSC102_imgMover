@@ -1,0 +1,69 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+body { /*This covers text in the body*/
+    /*background-color: #222223;*/
+    background-image: linear-gradient(#222223 150px, #414141);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 500px;
+    font-family: monospace;
+    font-size: 2.1em;
+    color: #ccc;
+    margin: 0;
+}
+h1 { /*While this does cover h1, I don't currently have any h1 that isn't overidden by a class/id so currently this is unused*/
+    font-variant: small-caps;
+    margin: 8px;
+}
+h2 { /*h2*/
+    font-variant: small-caps;
+    margin: 8px;
+}
+p { /*p*/
+    margin: 8px;
+}
+#meme-header { /*I wanted to center the text over the image, I could've used the style function within HTML but this is cleaner*/
+    text-indent: 220px
+}
+#container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+#meme {
+    position: absolute;
+    height: 300px;
+}
+footer { /*Attaches the footer to the bottom of the page so when I do have a page that scrolls, it stays where it should*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #38444d;
+    font-size: 0.8em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer p.school {
+    font-size: 0.65em;
+}
+.logo3 { /*Responsible for the UAT logo in the footer*/
+    position: absolute;
+    top: 28%;
+    left: 48.8%;
+}
+footer a:link { /*color of hyperlinks*/
+    color: rgb(157, 157, 185);
+}
+footer a:hover{ /*hoverover hyperlink*/
+    color: orange;
+}
+a:active{ /*hyperlink on click*/
+    color: rgb(104, 146, 146);
+}
+footer a.visited { /*already visited hyperlink*/
+    color: rgb(104, 146, 146);
+}
